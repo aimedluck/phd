@@ -30,10 +30,36 @@
     a:hover {
       text-decoration: underline;
     }
+
+
+    
+    .pdf-wrapper {
+      width: 100mm;
+      max-width: 100%;
+      margin: 2em auto;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .pdf-wrapper iframe {
+      width: 100%;
+      height: 287mm; /* approximate ratio for typical invites; adjust if needed */
+      border: none;
+    }
+
+    
   </style>
 </head>
 <body>
   <h1>Files</h1>
+
+  
+  <div class="pdf-wrapper">
+    <iframe src="invitation.pdf" title="PhD Defense Invitation"></iframe>
+  </div>
+
+  
   <ul>
     <li><a href="invitation.pdf">PhD defense invite</a></li>
     <li><a href="thesis_kimdeluca.pdf">Full thesis PDF (large file)</a></li>
